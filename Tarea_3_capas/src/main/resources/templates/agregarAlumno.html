@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Ingreso de Nuevo Alumno</h1>
+<form action="#" th:action="@{/ingresar}" th:object="${alumno}" method="post">
+
+		<p>
+		Nombre: <input type="text" th:field="*{nombre}">
+		</p>
+		<p>
+		Apellido: <input type="text" th:field="*{apellido}">
+		</p>
+		<p>
+		Fecha de Nacimiento: <input type="date" th:field="*{fechaNac}">
+		</p>
+		<p>
+		Lugar de Nacimiento: <input type="text" th:field="*{lugarNac}">
+		</p>
+		<p>
+		Instituto o Colegio de Procedencia: <input type="text" th:field="*{colegio}">
+		</p>
+		<p>
+		Telefono Fijo: <input type="text" th:field="*{fijo}" placeholder="No utilizar guiones">
+		</p>
+		<p>
+		Telefono Movil: <input type="text" th:field="*{movil}" placeholder="No utilizar guiones">
+		</p>
+		
+		<p>
+		<input type="submit" value="Guardar Alumno"><input type="reset" value="Borrar">
+		</p>
+	</form>
+
+</body>
+</html> 

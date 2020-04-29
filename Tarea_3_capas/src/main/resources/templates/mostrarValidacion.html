@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Se han cometido los siguientes errores al llenar el formulario:</h1>
+
+<p th:text="${errores != null} ? ${errores.enombre}"></p>
+<p th:text="${errores != null} ? ${errores.eapellido}"></p>
+<p th:text="${errores != null} ? ${errores.efechaNac}"></p>
+<p th:text="${errores != null} ? ${errores.elugarNac}"></p>
+<p th:text="${errores != null} ? ${errores.ecolegio}"></p>
+<p th:text="${errores != null} ? ${errores.efijo}"></p>
+<p th:text="${errores != null} ? ${errores.emovil}"></p>
+
+
+<a href="/ingresar">Ingresar Nuevo Alumno</a>
+</body>
+</html>
